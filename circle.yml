@@ -1,0 +1,16 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  pre:
+    - docker info && docker version
+
+test:
+  pre:
+    - docker build -t polinux/teamspeak .
+
+  override:
+  # Start Gitbucket
+    - docker run -d -p 9987:9987/udp -p 10011:10011 -p 30033:30033 --name ts3 polinux/teamspeak
+    - while true; do if docker logs ts3 | grep "listening on 0.0.0.0"; then break; else sleep 1; fi done
