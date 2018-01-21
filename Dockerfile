@@ -1,5 +1,4 @@
 FROM centos:7
-MAINTAINER Przemyslaw Ozgo linux@ozgo.info
 
 ENV TS3_VERSION=3.0.13.8
 
