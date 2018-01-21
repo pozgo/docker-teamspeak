@@ -13,8 +13,7 @@ sig_term () {
 }
 
 install_ts3() {
-  echo "Downloading Teamspeak version: ${TS3_VERSION}"
-  wget http://dl.4players.de/ts/releases/${TS3_VERSION}/teamspeak3-server_linux_amd64-${TS3_VERSION}.tar.bz2 -O /tmp/teamspeak.tar.bz2
+  echo "Installing Teamspeak version: ${TS3_VERSION}"
   mkdir -p /opt/teamspeak
   tar jxf /tmp/teamspeak.tar.bz2 -C /opt/teamspeak --strip-components=1
   rm -f /tmp/teamspeak.tar.bz2

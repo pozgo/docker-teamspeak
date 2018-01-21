@@ -12,7 +12,7 @@ Felling like supporting me in my projects use donate button. Thank You!
 
 [![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/?repo=https://github.com/pozgo/docker-teamspeak/tree/master)
 
-[Docker Image](https://hub.docker.com/r/polinux/teamspeak/) with TeamSpeak 3 Server using Alpine Linux to make image super small. Size is < `10Mb` 
+[Docker Image](https://hub.docker.com/r/polinux/teamspeak/) with TeamSpeak 3 Server using Alpine Linux to make image super small. Size is < `25Mb` 
 
 ### Build
 
