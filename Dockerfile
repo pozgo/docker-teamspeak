@@ -1,7 +1,7 @@
 FROM centos:7
 MAINTAINER Przemyslaw Ozgo linux@ozgo.info
 
-ENV TS3_VERSION=3.0.12.4
+ENV TS3_VERSION=3.0.13.8
 
 RUN \
   rpm --rebuilddb && yum clean all && \
