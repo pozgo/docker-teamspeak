@@ -1,4 +1,4 @@
-# TeamSpeak 3 Server in a Docker with persistent storage
+# TeamSpeak 3 Server in a Docker (Alpine)
 
 [![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-teamspeak/master.svg)](https://circleci.com/gh/pozgo/docker-teamspeak)
 [![GitHub Open Issues](https://img.shields.io/github/issues/pozgo/docker-teamspeak.svg)](https://github.com/pozgo/docker-teamspeak/issues)  
@@ -12,40 +12,43 @@ Felling like supporting me in my projects use donate button. Thank You!
 
 [![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/?repo=https://github.com/pozgo/docker-teamspeak/tree/master)
 
-[Docker Image](https://hub.docker.com/r/polinux/teamspeak/) with TeamSpeak 3 Server and persistent data storage.
+[Docker Image](https://hub.docker.com/r/polinux/teamspeak/) with TeamSpeak 3 Server using Alpine Linux to make image super small. Size is < `25Mb` 
 
 ### Build
 
-    docker build -t polinux/teamspeak .
-
+```bash
+docker build -t polinux/teamspeak .
+```
 
 ### Deploy Data Container
 All settings will be saved in `/data/ts3/` directory and can easily be backed up.
 
-    docker run \
-      -d \
-      --name ts3-data \
-      -v /data/ts3:/opt/teamspeak \
-      busybox
+```bash
+docker run \
+  -d \
+  --name ts3-data \
+  -v /data/ts3:/opt/teamspeak \
+  busybox
+```
 
 ### Deploy TeamSpeak Server
-
-    docker run \
-      -d \
-      --name ts3 \
-      -p 9987:9987/udp \
-      -p 10011:10011 \
-      -p 30033:30033 \
-      --volumes-from ts3-data \
-      polinux/teamspeak
+```bash
+docker run \
+  -d \
+  --name ts3 \
+  -p 9987:9987/udp \
+  -p 10011:10011 \
+  -p 30033:30033 \
+  --volumes-from ts3-data \
+  polinux/teamspeak
+```
 
 ### Server administrator access and ServerAdmin privilege key
 Admin login details can be found on first run in logs of running container. Make sure you save them. After restarting the container those details are not available anymore. See logs by typing `docker logs -f ts3`  
 
 Example output:  
 
-
-```
+```bash
 [LOG 09:43:32] Teamspeak version: 3.0.12.4 installed.
 [LOG 09:43:32] Starting Teamspeak 3 Server
 2016-05-05 09:43:32.736465|INFO    |ServerLibPriv |   |TeamSpeak 3 Server 3.0.12.4 (2016-04-25 15:16:45)
@@ -90,29 +93,28 @@ Example output:
 2016-05-05 09:43:34.066637|INFO    |Query         |   |listening on 0.0.0.0:10011
 ```
 
-
 Docker troubleshooting
 ======================
 
 Use docker command to see if all required containers are up and running:
-```
+```bash
 $ docker ps
 ```
 
 Check logs of gitbucket server container:
-```
+```bash
 $ docker logs ts3
 ```
 
 Sometimes you might just want to review how things are deployed inside a running
  container, you can do this by executing a _bash shell_ through _docker's
  exec_ command:
-```
+```bash
 docker exec -ti ts3 /bin/bash
 ```
 
 History of an image and size of layers:
-```
+```bash
 docker history --no-trunc=true polinux/teamspeak | tr -s ' ' | tail -n+2 | awk -F " ago " '{print $2}'
 ```
 
