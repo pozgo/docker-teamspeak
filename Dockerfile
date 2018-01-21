@@ -1,4 +1,5 @@
 FROM centos:7
+FROM alpine:latest
 
 ENV TS3_VERSION=3.0.13.8
 
