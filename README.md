@@ -1,11 +1,14 @@
 # TeamSpeak 3 Server in a Docker with persistent storage
 
-[![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-teamspeak/master.svg)](https://circleci.com/gh/pozgo/docker-teamspeak)  
-[![GitHub Open Issues](https://img.shields.io/github/issues/pozgo/docker-teamspeak.svg)](https://github.com/pozgo/docker-teamspeak/issues)
-[![GitHub Stars](https://img.shields.io/github/stars/pozgo/docker-teamspeak.svg)](https://github.com/pozgo/docker-teamspeak)
-[![GitHub Forks](https://img.shields.io/github/forks/pozgo/docker-teamspeak.svg)](https://github.com/pozgo/docker-teamspeak)  
-[![Stars on Docker Hub](https://img.shields.io/docker/stars/polinux/teamspeak.svg)](https://hub.docker.com/r/polinux/teamspeak)
-[![Pulls on Docker Hub](https://img.shields.io/docker/pulls/polinux/teamspeak.svg)](https://hub.docker.com/r/polinux/teamspeak)  
+[![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-teamspeak/master.svg)](https://circleci.com/gh/pozgo/docker-teamspeak)
+[![GitHub Open Issues](https://img.shields.io/github/issues/pozgo/docker-teamspeak.svg)](https://github.com/pozgo/docker-teamspeak/issues)  
+[![Stars](https://img.shields.io/github/stars/pozgo/docker-teamspeak.svg?style=social&label=Stars)]()
+[![Fork](https://img.shields.io/github/forks/pozgo/docker-teamspeak.svg?style=social&label=Fork)]()  
+[![](https://img.shields.io/github/release/pozgo/docker-teamspeak.svg)](http://microbadger.com/images/polinux/teamspeak)  
+[![Docker build](http://dockeri.co/image/polinux/teamspeak)](https://hub.docker.com/r/polinux/teamspeak/)
+
+Felling like supporting me in my projects use donate button. Thank You!  
+[![](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://www.paypal.me/POzgo)
 
 [![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/?repo=https://github.com/pozgo/docker-teamspeak/tree/master)
 
