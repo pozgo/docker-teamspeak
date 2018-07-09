@@ -2,8 +2,8 @@
 ### https://github.com/sgerrand/alpine-pkg-glibc
 FROM alpine:latest
 
-ENV     TS3_VERSION=3.0.13.8 \
-        GLIBC_VERSION='2.26-r0'
+ENV     TS3_VERSION=3.2.0 \
+        GLIBC_VERSION='2.27-r0'
 
 RUN \
     apk --no-cache add ca-certificates wget; \
