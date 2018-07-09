@@ -15,6 +15,7 @@ sig_term () {
 install_ts3() {
   echo "Installing Teamspeak version: ${TS3_VERSION}"
   mkdir -p /opt/teamspeak
+  touch /opt/teamspeak/.ts3server_license_accepted
   tar jxf /tmp/teamspeak.tar.bz2 -C /opt/teamspeak --strip-components=1
   rm -f /tmp/teamspeak.tar.bz2
   echo "Teamspeak version: ${TS3_VERSION} installed."
