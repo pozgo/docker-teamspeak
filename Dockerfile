@@ -2,7 +2,7 @@
 ### https://github.com/sgerrand/alpine-pkg-glibc
 FROM alpine:latest
 
-ENV     TS3_VERSION=3.3.0 \
+ENV     TS3_VERSION=3.5.1 \
         GLIBC_VERSION='2.27-r0'
 
 RUN \
