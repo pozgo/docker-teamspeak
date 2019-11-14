@@ -109,11 +109,13 @@ $ docker logs ts3
 Sometimes you might just want to review how things are deployed inside a running
  container, you can do this by executing a _bash shell_ through _docker's
  exec_ command:
+
 ```bash
 docker exec -ti ts3 /bin/bash
 ```
 
 History of an image and size of layers:
+
 ```bash
 docker history --no-trunc=true polinux/teamspeak | tr -s ' ' | tail -n+2 | awk -F " ago " '{print $2}'
 ```
