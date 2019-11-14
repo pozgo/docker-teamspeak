@@ -12,9 +12,9 @@ Felling like supporting me in my projects use donate button. Thank You!
 
 [![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/?repo=https://github.com/pozgo/docker-teamspeak/tree/master)
 
-[Docker Image](https://hub.docker.com/r/polinux/teamspeak/) with TeamSpeak 3 Server using Alpine Linux to make image super small. Size is < `25Mb` 
+[Docker Image](https://hub.docker.com/r/polinux/teamspeak/) with TeamSpeak 3 Server using Alpine Linux to make image super small. Size is < `25Mb`
 
-### Build
+### Build Image
 
 ```bash
 docker build -t polinux/teamspeak .
@@ -31,7 +31,7 @@ docker run \
   busybox
 ```
 
-### Deploy TeamSpeak Server
+### Deploy TeamSpeak3 Server
 ```bash
 docker run \
   -d \
@@ -109,11 +109,13 @@ $ docker logs ts3
 Sometimes you might just want to review how things are deployed inside a running
  container, you can do this by executing a _bash shell_ through _docker's
  exec_ command:
+
 ```bash
 docker exec -ti ts3 /bin/bash
 ```
 
 History of an image and size of layers:
+
 ```bash
 docker history --no-trunc=true polinux/teamspeak | tr -s ' ' | tail -n+2 | awk -F " ago " '{print $2}'
 ```
