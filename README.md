@@ -14,7 +14,7 @@ Felling like supporting me in my projects use donate button. Thank You!
 
 [Docker Image](https://hub.docker.com/r/polinux/teamspeak/) with TeamSpeak 3 Server using Alpine Linux to make image super small. Size is < `25Mb`
 
-### Build
+### Build Image
 
 ```bash
 docker build -t polinux/teamspeak .
