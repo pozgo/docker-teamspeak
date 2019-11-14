@@ -2,12 +2,12 @@
 ### https://github.com/sgerrand/alpine-pkg-glibc
 FROM alpine:latest
 
-ENV     TS3_VERSION=3.0.13.8 \
-        GLIBC_VERSION='2.26-r0'
+ENV     TS3_VERSION=3.7.1 \
+        GLIBC_VERSION='2.29-r0'
 
 RUN \
     apk --no-cache add ca-certificates wget; \
-    wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://raw.githubusercontent.com/sgerrand/alpine-pkg-glibc/master/sgerrand.rsa.pub; \
+    wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub; \
     wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/${GLIBC_VERSION}/glibc-${GLIBC_VERSION}.apk; \
     apk add glibc-${GLIBC_VERSION}.apk; \
     apk add --update bzip2; \
