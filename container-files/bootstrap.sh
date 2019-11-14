@@ -21,6 +21,8 @@ install_ts3() {
   echo "Teamspeak version: ${TS3_VERSION} installed."
 }
 
+### Action
+
 if [[ ! -e ${TS3_DATABASE} ]]; then
   install_ts3
 fi
