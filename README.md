@@ -1,6 +1,6 @@
 # TeamSpeak 3 Server in a Docker (Alpine)
 
-[![CircleCI Build Status](https://img.shields.io/circleci/project/pozgo/docker-teamspeak/master.svg)](https://circleci.com/gh/pozgo/docker-teamspeak)
+[![Build Status](https://jenkins.ozgo.info/jenkins/buildStatus/icon?job=gh-pozgo-docker-teamspeak)](https://jenkins.ozgo.info/jenkins/job/gh-pozgo-docker-teamspeak/)
 [![GitHub Open Issues](https://img.shields.io/github/issues/pozgo/docker-teamspeak.svg)](https://github.com/pozgo/docker-teamspeak/issues)  
 [![Stars](https://img.shields.io/github/stars/pozgo/docker-teamspeak.svg?style=social&label=Stars)]()
 [![Fork](https://img.shields.io/github/forks/pozgo/docker-teamspeak.svg?style=social&label=Fork)]()  
