@@ -1,4 +1,4 @@
-# TeamSpeak 3 Server in a Docker (Alpine)
+# TeamSpeak 3 Server in a Docker (CentOS7)
 
 [![Build Status](https://jenkins.ozgo.info/jenkins/buildStatus/icon?job=gh-pozgo-docker-teamspeak)](https://jenkins.ozgo.info/jenkins/job/gh-pozgo-docker-teamspeak/)
 [![GitHub Open Issues](https://img.shields.io/github/issues/pozgo/docker-teamspeak.svg)](https://github.com/pozgo/docker-teamspeak/issues)  
@@ -12,7 +12,7 @@ Felling like supporting me in my projects use donate button. Thank You!
 
 [![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/?repo=https://github.com/pozgo/docker-teamspeak/tree/master)
 
-[Docker Image](https://hub.docker.com/r/polinux/teamspeak/) with TeamSpeak 3 Server using Alpine Linux to make image super small. Size is < `25Mb`
+[Docker Image](https://hub.docker.com/r/polinux/teamspeak/) with TeamSpeak 3 Server using CentOS7
 
 ### Build Image
 
