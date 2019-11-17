@@ -13,6 +13,7 @@ Felling like supporting me in my projects use donate button. Thank You!
 [![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/?repo=https://github.com/pozgo/docker-teamspeak/tree/master)
 
 [Docker Image](https://hub.docker.com/r/polinux/teamspeak/) with TeamSpeak 3 Server using CentOS7
+This image was moved to CentOS7 as base due to libraries mismatch on Alpine linux. It might be a bit bigger than usual but it's still small (~84Mb).
 
 ### Build Image
 
