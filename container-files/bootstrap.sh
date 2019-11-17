@@ -2,13 +2,13 @@
 set -e
 # Functions
 sig_int () {
-    echo "SIGINT received"
-    kill -2 ${pid}
+  echo "SIGINT received"
+  kill -2 ${pid}
 }
 
 sig_term () {
-    echo "SIGTERM received"
-    kill -15 ${pid}
+  echo "SIGTERM received"
+  kill -15 ${pid}
 }
 
 /opt/teamspeak/ts3server_minimal_runscript.sh $@ &
