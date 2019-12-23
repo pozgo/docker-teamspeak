@@ -1,8 +1,6 @@
-### Alpine requires glibc to be present in the system below link to fficial repository
-### https://github.com/sgerrand/alpine-pkg-glibc
 FROM centos:7
 
-ENV     TS3_VERSION=3.10.0
+ENV  TS3_VERSION=3.10.0
 
 RUN \
     yum install -y wget bzip2 glibc && \
