@@ -1,6 +1,6 @@
 # TeamSpeak 3 Server in a Docker (CentOS7)
 
-[![Build Status](https://jenkins.ozgo.info/jenkins/buildStatus/icon?job=ghp-pozgo-docker-teamspeak)](https://jenkins.ozgo.info/jenkins/job/ghp-pozgo-docker-teamspeak/)  
+[![Build & Test TeamSpeak Server 3](https://github.com/pozgo/docker-teamspeak/workflows/Build%20&%20Test%20TeamSpeak%20Server%203/badge.svg)](https://github.com/pozgo/docker-teamspeak/actions)    
 [![GitHub Open Issues](https://img.shields.io/github/issues/pozgo/docker-teamspeak.svg)](https://github.com/pozgo/docker-teamspeak/issues)  
 [![Stars](https://img.shields.io/github/stars/pozgo/docker-teamspeak.svg?style=social&label=Stars)]()
 [![Fork](https://img.shields.io/github/forks/pozgo/docker-teamspeak.svg?style=social&label=Fork)]()  
