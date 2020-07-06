@@ -1,0 +1,29 @@
+name: Build & Test TeamSpeak Server 3
+
+on:
+  push:
+    branches: [issue/*, feature/*]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Docker image
+        run: |
+          export RELEASE=$(grep "TS3_VERSION=" Dockerfile | sed 's|^.*=||g' |awk '{print $1}')
+          docker build . --file Dockerfile --tag polinux/teamspeak:$RELEASE
+      - name: Test image
+        run: |
+          export RELEASE=$(grep "TS3_VERSION=" Dockerfile | sed 's|^.*=||g' |awk '{print $1}')
+          docker run -d -p 9987:9987/udp -p 10011:10011 -p 30033:30033 --name ts3 polinux/teamspeak:$RELEASE
+          while true; do if docker logs ts3 | grep "listening on 0.0.0.0"; then break; else sleep 1; fi done
+      - name: Stage Image
+        run: |
+          export RELEASE=$(grep "TS3_VERSION=" Dockerfile | sed 's|^.*=||g' |awk '{print $1}')
+          docker tag polinux/teamspeak:$RELEASE polinux/teamspeak:stage
+          docker login  -u ${{ secrets.DOCKER_HUB_USER }} -p ${{ secrets.DOCKER_HUB_PASS }}
+          docker push polinux/teamspeak:stage
