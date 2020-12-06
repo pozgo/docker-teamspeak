@@ -1,6 +1,6 @@
 FROM centos:7
 
-ENV  TS3_VERSION=3.12.1
+ENV  TS3_VERSION=3.13.2
 
 RUN \
     yum install -y wget bzip2 glibc && \
