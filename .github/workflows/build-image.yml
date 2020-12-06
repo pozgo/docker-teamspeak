@@ -2,7 +2,7 @@ name: Build & Test TeamSpeak Server 3
 
 on:
   push:
-    branches: [issue/*, feature/*]
+    branches: [issue/*, feature/*, update/*]
   pull_request:
     branches: [master]
 
