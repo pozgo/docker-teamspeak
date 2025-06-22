@@ -16,6 +16,6 @@ RUN \
 
 COPY container-files /
 
-#ENTRYPOINT ["/bootstrap.sh"]
+ENTRYPOINT ["/bootstrap.sh"]
 
 EXPOSE 9987/udp 10011 10080 30033
