@@ -1,6 +1,5 @@
-# TeamSpeak 3 Server in a Docker (CentOS7)
+# TeamSpeak 3 Server in a Docker (`Debian 12`)
 
-[![Build & Test TeamSpeak Server 3](https://github.com/pozgo/docker-teamspeak/workflows/Build%20&%20Test%20TeamSpeak%20Server%203/badge.svg)](https://github.com/pozgo/docker-teamspeak/actions)    
 [![GitHub Open Issues](https://img.shields.io/github/issues/pozgo/docker-teamspeak.svg)](https://github.com/pozgo/docker-teamspeak/issues)  
 [![Stars](https://img.shields.io/github/stars/pozgo/docker-teamspeak.svg?style=social&label=Stars)]()
 [![Fork](https://img.shields.io/github/forks/pozgo/docker-teamspeak.svg?style=social&label=Fork)]()  
@@ -10,7 +9,7 @@
 Felling like supporting me in my projects use donate button. Thank You!  
 [![](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://www.paypal.me/POzgo)
 
-[Docker Image](https://hub.docker.com/r/polinux/teamspeak/) with TeamSpeak 3 Server using CentOS7
+[Docker Image](https://hub.docker.com/r/polinux/teamspeak/) with TeamSpeak 3 Server using Debian 12  
 This image was moved to CentOS7 as base due to libraries mismatch on Alpine linux. It might be a bit bigger than usual but it's still small (~84Mb).
 
 ### Build Image
